@@ -2,9 +2,12 @@
 	"name": "rafourtimes",
 	"displayName": "RafourTimes",
 	"description": "Ne plus attendre pendant 10 min le tram E ✔",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"publisher": "j-bo",
-	"repository": {"url": "https://github.com/j-bo/rafourtimes.git","type": "git"},
+	"repository": {
+		"url": "https://github.com/j-bo/rafourtimes.git",
+		"type": "git"
+	},
 	"icon": "img/icon.png",
 	"engines": {
 		"vscode": "^1.41.0"
@@ -16,14 +19,16 @@
 		"*"
 	],
 	"contributes": {
-		"configuration":{
+		"configuration": {
 			"title": "Rafourtimes",
-			"properties":{
+			"properties": {
 				"rafourtimes.stop": {
-					"type":["string"],
-					"default":"SEM:3234",
+					"type": [
+						"string"
+					],
+					"default": "SEM:3234",
 					"description": "ID of the desired stop to watch.",
-					"scope":"application"
+					"scope": "application"
 				}
 			}
 		}
