@@ -1,0 +1,54 @@
+{
+	"name": "rafourtimes",
+	"displayName": "RafourTimes",
+	"description": "Ne plus attendre pendant 10 min le tram E ✔",
+	"version": "0.0.1",
+	"publisher": "j-bo",
+	"icon": "img/icon.JPG",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"contributes": {
+		"configuration":{
+			"title": "Rafourtimes",
+			"properties":{
+				"rafourtimes.stop": {
+					"type":["string"],
+					"default":"SEM:3234",
+					"description": "ID of the desired stop to watch.",
+					"scope":"application"
+				}
+			}
+		}
+	},
+	"main": "./out/extension.js",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.41.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"tslint": "^5.20.0",
+		"vscode-test": "^1.2.2"
+	},
+	"dependencies": {
+		"@types/request-promise-native": "^1.0.17",
+		"request": "^2.88.0",
+		"request-promise-native": "^1.0.8"
+	}
+}
