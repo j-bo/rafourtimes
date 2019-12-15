@@ -4,7 +4,8 @@
 	"description": "Ne plus attendre pendant 10 min le tram E ✔",
 	"version": "0.0.1",
 	"publisher": "j-bo",
-	"icon": "img/icon.JPG",
+	"repository": {"url": "https://github.com/j-bo/rafourtimes.git","type": "git"},
+	"icon": "img/icon.png",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
