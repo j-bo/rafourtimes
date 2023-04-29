@@ -1,4 +1,6 @@
 # Changelog
+## 0.5.0
+- Added C1 Norbert Ségard to Grenoble stop
 ## 0.4.0
 - Added clic on status bar to choose between predefined stops
 - Added C1 Inria to Grenoble stop

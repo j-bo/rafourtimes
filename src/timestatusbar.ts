@@ -14,6 +14,7 @@ export class TimeStatusBar {
         this.stops = new Map<string, string>();
         this.stops.set('TRAM E: Rafour -> Grenoble','SEM:3234');
         this.stops.set('BUS C1: INRIA -> Grenoble','SEM:4527');
+        this.stops.set('BUS C1: Nobert Séguard -> Grenoble','SEM:1546');
 
         const def_val = 'SEM:3234';
         const def_key = 'TRAM E: Rafour -> Grenoble';
